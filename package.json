@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "main": "electron/main.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -10,6 +11,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
+    "electron-is-dev": "^1.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
@@ -20,7 +22,20 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "compile-electron": "yarn tsc ./electron/main.ts",
+    "electron-start": "electron .",
+    "dist": "electron-builder",
+    "preelectron-pack": "yarn build",
+    "electron-pack": "yarn dist --win portable"
+  },
+  "build": {
+    "productName": "Shear Pin Report",
+    "files": [
+      "**/*",
+      "build/**/*"
+    ],
+    "extends": null
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +54,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "electron": "11.2.0",
+    "electron-builder": "^22.9.1"
   }
 }
