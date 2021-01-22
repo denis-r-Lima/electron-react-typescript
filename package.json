@@ -30,12 +30,15 @@
     "electron-pack": "yarn dist --win portable"
   },
   "build": {
-    "productName": "Shear Pin Report",
+    "productName": "my-app",
     "files": [
       "**/*",
       "build/**/*"
     ],
-    "extends": null
+    "extends": null,
+    "author":{
+      "name": " Denis Lima"
+    }
   },
   "eslintConfig": {
     "extends": [
