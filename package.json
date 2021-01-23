@@ -2,7 +2,9 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "author": {"name":"Denis Lima"},
   "main": "electron/main.js",
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -35,10 +37,7 @@
       "**/*",
       "build/**/*"
     ],
-    "extends": null,
-    "author":{
-      "name": " Denis Lima"
-    }
+    "extends": null
   },
   "eslintConfig": {
     "extends": [
