@@ -60,4 +60,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 
-**Note: To use some node modules, like fs, in necessary to add target:"electron-renderer" on the webpack config file(node_modules/react-scripts/config/webpack.config.js)
+**Note: To use some node modules, like fs, is necessary to add target:"electron-renderer" on the webpack config file(node_modules/react-scripts/config/webpack.config.js)
