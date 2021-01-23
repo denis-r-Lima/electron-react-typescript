@@ -39,17 +39,17 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-### compile-electron
+### `compile-electron`
 
-Compile the main.ts file to a main.js file, need to  be done every time the main.ts file is changed
+Compile the main.ts file to a main.js file, need to  be done every time the main.ts file is edited
 
-### electron-start
+### `electron-start`
 
 Start the electron app.
 
-**Note: It`s necessary to run yarn start before to execute your react app on localhost:3000
+**Note: It`s necessary to run yarn start 
 
-### electron-pack
+### `electron-pack`
 
 Pack your electron app in one windowns single file format
 
